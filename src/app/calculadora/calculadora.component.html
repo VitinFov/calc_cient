@@ -1,0 +1,31 @@
+<div class="container">
+    <h1>Calculadora Científica</h1>
+    <input type="text" [(ngModel)]="input" placeholder="0" readonly />
+    <div class="buttons">
+      <button (click)="appendNumber('7')">7</button>
+      <button (click)="appendNumber('8')">8</button>
+      <button (click)="appendNumber('9')">9</button>
+      <button (click)="clear()">C</button>
+  
+      <button (click)="appendNumber('4')">4</button>
+      <button (click)="appendNumber('5')">5</button>
+      <button (click)="appendNumber('6')">6</button>
+      <button (click)="appendOperator('+')">+</button>
+  
+      <button (click)="appendNumber('1')">1</button>
+      <button (click)="appendNumber('2')">2</button>
+      <button (click)="appendNumber('3')">3</button>
+      <button (click)="appendOperator('-')">-</button>
+  
+      <button (click)="appendNumber('0')">0</button>
+      <button (click)="appendOperator('*')">*</button>
+      <button (click)="appendOperator('/')">/</button>
+      <button (click)="calculate()">=</button>
+  
+      <button (click)="scientificFunction('sin')">sin</button>
+      <button (click)="scientificFunction('cos')">cos</button>
+      <button (click)="scientificFunction('log')">log</button>
+      <button (click)="scientificFunction('sqrt')">√</button>
+    </div>
+  </div>
+  
